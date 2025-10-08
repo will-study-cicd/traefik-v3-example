@@ -10,3 +10,11 @@ keyFile = "/data/ssl/example.com.pem.key"
 # [[tls.certificates]]
 # certFile = "/data/ssl/lab.com.der.crt"
 # keyFile = "/data/ssl/lab.com.der.key"
+
+# [tls.stores.default.defaultCertificate]
+# certFile = "/data/ssl/localhost+2.pem"
+# keyFile = "/data/ssl/localhost+2-key.pem"
+# 
+# [[tls.certificates]]
+# certFile = "/data/ssl/localhost+2.pem"
+# keyFile = "/data/ssl/localhost+2-key.pem"
