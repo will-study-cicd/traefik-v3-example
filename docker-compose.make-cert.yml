@@ -1,4 +1,3 @@
-
 services:
   certs-maker:
     image: soulteary/certs-maker:v3.8.0
