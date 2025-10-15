@@ -109,7 +109,11 @@ services:
       - "stats.g.doubleclick.net:127.0.0.1"
       - "${SERVICE_DOMAIN}:127.0.0.1"
     healthcheck:
-      test: ["CMD-SHELL", "wget -q --spider --proxy off localhost:8080/ping || exit 1"]
+      test:
+        [
+          "CMD-SHELL",
+          "wget -q --spider --proxy off localhost:8080/ping || exit 1",
+        ]
       interval: 3s
       retries: 10
     logging:

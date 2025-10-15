@@ -1,0 +1,22 @@
+tls:
+  stores:
+    default:
+      defaultCertificate:
+        certFile: /data/ssl/example.com+1.pem
+        keyFile: /data/ssl/example.com+1-key.pem
+
+  certificates:
+    - certFile: /data/ssl/localhost+1.pem
+      keyFile: /data/ssl/localhost+1-key.pem
+      stores:
+        - default
+
+    - certFile: /data/ssl/example.com+1.pem
+      keyFile: /data/ssl/example.com+1-key.pem
+      stores:
+        - default
+
+    - certFile: /data/ssl/hdyauto.qzz.io+1.pem
+      keyFile: /data/ssl/hdyauto.qzz.io+1-key.pem
+      stores:
+        - default
